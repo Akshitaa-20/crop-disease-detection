@@ -1,0 +1,4 @@
+data/
+crop_env/
+outputs/model.pth
+__pycache__/
