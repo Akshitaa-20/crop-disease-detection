@@ -3,13 +3,7 @@
 
 
 \#Summary
-
-This project is a deep learning system that uses computer vision to find crop diseases in pictures of leaves.
-
-
-
-It uses a pretrained EfficientNet model and is set up as an interactive web app where people can upload an image and get predictions right away.
-
+\-Built a deep learning-based image classification system using transfer learning (EfficientNet) to detect crop diseases from leaf images. The model is deployed via a Gradio interface for real-time inference, enabling users to upload images and receive predictions instantly.
 
 
 \#Features
@@ -23,7 +17,6 @@ It uses a pretrained EfficientNet model and is set up as an interactive web app 
 \-Quick CPU inference
 
 
-
 \#Model Information
 
 \-Model: EfficientNet(Learning by Transfer)
@@ -34,7 +27,7 @@ It uses a pretrained EfficientNet model and is set up as an interactive web app 
 
 \-Size of Input: 128x128
 
-\-Accuracy: 45-70% (depends on training)
+\-Model performance varied between 45–70% depending on class imbalance and training configuration. Focus was placed on understanding transfer learning behavior and deployment rather than aggressive hyperparameter tuning
 
 
 
@@ -52,7 +45,25 @@ It uses a pretrained EfficientNet model and is set up as an interactive web app 
 
 \-PIL
 
+\#Model Training Details
 
+\-Used transfer learning with EfficientNet pretrained on ImageNet
+
+\-Fine-tuned final layers for multi-class classification
+
+\-Applied data preprocessing (resizing, normalization)
+
+\-Used cross-entropy loss and Adam optimizer
+
+\#Computer Vision Concepts Used
+
+\-Image preprocessing and normalization
+
+\-Transfer learning in CNNs
+
+\-Feature extraction using pretrained models
+
+\-Real-time inference pipeline
 
 \#How the project is setup
 
